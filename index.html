@@ -12,17 +12,24 @@
       font-family: sans-serif;
       background-color: #fff8f0;
       color: #333;
-      text-align: center;
     }
     h1 {
       font-size: 24px;
+      text-align: center;
       margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
     }
     button {
       display: block;
       width: 80%;
       padding: 15px;
-      margin: 12px auto;
+      margin: 8px auto;
       font-size: 18px;
       border: none;
       border-radius: 10px;
@@ -32,27 +39,42 @@
     button:active {
       background-color: #ff9933;
     }
+    p {
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <h1>スマホの使い方教室</h1>
-  <p>知りたい操作を選んでください</p>
+  <p>知りたい操作をカテゴリから選んでください</p>
 
-  <!-- 基本操作 -->
+  <!-- 基本操作カテゴリ -->
+  <h2>基本操作</h2>
   <button onclick="location.href='power.html'">電源の入れ方／切り方</button>
   <button onclick="location.href='unlock.html'">画面のロック解除</button>
   <button onclick="location.href='home.html'">ホーム画面の使い方</button>
   <button onclick="location.href='swipe.html'">画面スワイプ操作</button>
+  <button onclick="location.href='volume.html'">音量の調整</button>
+  <button onclick="location.href='screenshot.html'">スクリーンショットの撮り方</button>
 
-  <!-- アプリ操作 -->
-  <button onclick="location.href='call.html'">電話のかけ方</button>
+  <!-- アプリ操作カテゴリ -->
+  <h2>アプリの使い方</h2>
+  <button onclick="location.href='call.html'">電話のかけ方／受け方</button>
   <button onclick="location.href='message.html'">メッセージの送り方</button>
-  <button onclick="location.href='camera.html'">写真の撮り方</button>
-  <button onclick="location.href='apps.html'">アプリの使い方</button>
+  <button onclick="location.href='camera.html'">写真の撮り方／アルバムの見方</button>
+  <button onclick="location.href='apps.html'">アプリのインストール／アンインストール</button>
+  <button onclick="location.href='qr.html'">QRコードの読み取り</button>
+  <button onclick="location.href='browser.html'">ブラウザの使い方</button>
+  <button onclick="location.href='maps.html'">Google Mapsの使い方</button>
 
-  <!-- 設定・安全 -->
-  <button onclick="location.href='settings.html'">設定アプリの使い方</button>
-  <button onclick="location.href='safety.html'">スマホの安全・トラブル対策</button>
+  <!-- 設定・安全カテゴリ -->
+  <h2>設定・安全</h2>
+  <button onclick="location.href='wifi.html'">Wi-Fi接続</button>
+  <button onclick="location.href='brightness.html'">画面の明るさ調整</button>
+  <button onclick="location.href='notifications.html'">通知の管理</button>
+  <button onclick="location.href='permissions.html'">アプリの権限確認</button>
+  <button onclick="location.href='battery.html'">バッテリー確認と充電</button>
+  <button onclick="location.href='safety.html'">怪しいメッセージや電話の見分け方</button>
 
 </body>
 </html>
