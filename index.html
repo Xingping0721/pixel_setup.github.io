@@ -2,10 +2,50 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>私のホームページ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スマホ教室</title>
+  <style>
+    body {
+      font-size: 18px;
+      line-height: 1.6;
+      padding: 20px;
+      font-family: sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      background-color: #ffb347;
+      color: white;
+    }
+    button:active {
+      background-color: #ff9933;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+  </style>
 </head>
 <body>
-  <h1>こんにちは！私のホームページへようこそ</h1>
-  <p>ここはGitHub Pagesで作った個人用ページです。</p>
+  <h1>スマホの使い方教室</h1>
+  
+  <p>スマホを使うときに必要なことをわかりやすく説明します。</p>
+  
+  <button onclick="alert('電話のかけ方を説明')">電話のかけ方</button>
+  <button onclick="alert('写真の撮り方を説明')">写真の撮り方</button>
+  <button onclick="alert('アプリの使い方を説明')">アプリの使い方</button>
+
+  <p>分からないことがあったら、ボタンを押してみてね！</p>
 </body>
 </html>
