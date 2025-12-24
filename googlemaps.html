@@ -95,6 +95,29 @@
       padding-top: 20px;
       border-top: 1px solid #ddd;
     }
+
+    .back-to-index {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 20px 0;
+      background-color: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 24px;
+      font-size: 16px;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow);
+    }
+
+    .back-to-index:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .back-to-index:active {
+      transform: translateY(0);
+      box-shadow: var(--shadow-active);
+    }
   </style>
 </head>
 
@@ -115,7 +138,9 @@
     <p>4. 「経路」をタップすると、現在地からの道順が表示されます。</p>
     <p>5. 車・徒歩・自転車など、移動手段を選べます。</p>
 
-    <footer></footer>
+    <footer>
+      <a href="index.html" class="back-to-index">選択画面に戻る</a>
+    </footer>
   </div>
 </body>
 
