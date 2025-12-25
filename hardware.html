@@ -20,6 +20,7 @@
       --text-main: #191c1c;
       --text-sub: #40484b;
       --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      --shadow-active: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     body {
@@ -34,8 +35,7 @@
 
     header {
       background-color: var(--card-bg);
-      padding: 20px;
-      text-align: center;
+      padding: 20px 20px;
       border-bottom-left-radius: 24px;
       border-bottom-right-radius: 24px;
       box-shadow: var(--shadow);
@@ -45,29 +45,75 @@
     h1 {
       font-size: 22px;
       color: var(--primary-color);
-      margin: 0 0 10px 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
     }
 
     .back-button {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
       background-color: var(--accent-color);
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
       color: var(--primary-color);
+      font-size: 24px;
       text-decoration: none;
-      border-radius: 8px;
-      font-size: 14px;
       transition: all 0.2s ease;
     }
 
     .back-button:hover {
-      background-color: #c9d9d5;
+      transform: scale(1.05);
+    }
+
+    .back-button:active {
+      transform: scale(0.95);
     }
 
     .container {
       max-width: 600px;
       margin: 0 auto;
       padding: 0 20px 40px;
+    }
+
+    h2 {
+      font-size: 18px;
+      color: var(--text-sub);
+      margin-top: 30px;
+      margin-bottom: 15px;
+      padding-left: 10px;
+      border-left: 4px solid var(--primary-color);
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 15px;
+      line-height: 1.8;
+    }
+
+    img {
+      display: block;
+      width: 55vw;
+      max-width: 300px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      margin: 20px auto;
+    }
+
+    video {
+      display: block;
+      width: 55vw;
+      max-width: 300px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      margin: 20px auto;
     }
 
     .hardware-section {
@@ -164,14 +210,40 @@
       padding-top: 20px;
       border-top: 1px solid #ddd;
     }
+
+    .back-to-index {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 20px 0;
+      background-color: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 24px;
+      font-size: 16px;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow);
+    }
+
+    .back-to-index:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .back-to-index:active {
+      transform: translateY(0);
+      box-shadow: var(--shadow-active);
+    }
   </style>
 </head>
 
 <body>
-
   <header>
-    <h1>スマホのボタン・パーツ</h1>
-    <a href="index.html" class="back-button">← メニューに戻る</a>
+    <h1>
+      <a href="index.html" class="back-button">
+        <span class="material-symbols-rounded">arrow_back</span>
+      </a>
+      スマホのボタン・パーツ
+    </h1>
   </header>
 
   <div class="container">
@@ -211,9 +283,7 @@
         </ul>
       </div>
 
-      <div style="text-align: center; margin-top: 20px;">
-        <img src="picture/hardware_3.jpg" alt="スマホの右側面（電源ボタン、音量ボタン）" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-      </div>
+      <img src="picture/hardware_3.jpg" alt="スマホの右側面（電源ボタン、音量ボタン）">
     </div>
 
     <div class="hardware-section">
@@ -241,9 +311,7 @@
         <p><strong>役割：</strong> 写真や文字などが表示されます。ここをタップして操作します</p>
       </div>
 
-      <div style="text-align: center; margin-top: 20px;">
-        <img src="picture/hardware_1.jpg" alt="スマホを上から撮った写真" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-      </div>
+      <img src="picture/hardware_1.jpg" alt="スマホを上から撮った写真">
     </div>
 
     <div class="hardware-section">
@@ -282,9 +350,7 @@
         <p><strong>役割：</strong> 電話の相手の声や、音楽・動画の音が出てきます</p>
       </div>
 
-      <div style="text-align: center; margin-top: 20px;">
-        <img src="picture/hardware_2.jpg" alt="スマホの下部（USB-C、SIM、スピーカ）" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-      </div>
+      <img src="picture/hardware_2.jpg" alt="スマホの下部（USB-C、SIM、スピーカ）">
     </div>
 
     <div class="hardware-section">
