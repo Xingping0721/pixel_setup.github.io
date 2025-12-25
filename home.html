@@ -81,10 +81,70 @@
       padding: 0 20px 40px;
     }
 
+    h2 {
+      font-size: 18px;
+      color: var(--text-sub);
+      margin-top: 30px;
+      margin-bottom: 15px;
+      padding-left: 10px;
+      border-left: 4px solid var(--primary-color);
+    }
+
     p {
       font-size: 16px;
       margin-bottom: 15px;
       line-height: 1.8;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      line-height: 1.8;
+    }
+
+    strong {
+      color: var(--text-main);
+    }
+
+    img {
+      display: block;
+      width: 55vw;
+      max-width: 300px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      margin: 20px auto;
+    }
+
+    video {
+      display: block;
+      width: 55vw;
+      max-width: 300px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      margin: 20px auto;
+    }
+
+    .media-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 20px 0;
+    }
+
+    .media-container img,
+    .media-container video {
+      flex: 1 1 calc(50% - 10px);
+      min-width: 200px;
+      max-width: 300px;
+      margin: 0;
     }
 
     footer {
@@ -132,8 +192,53 @@
   </header>
 
   <div class="container">
-    <p>1. アプリのアイコンが並んでいる画面です。</p>
-    <p>2. 下のバーの中央ボタンを押すと、いつでもホーム画面に戻れます。</p>
+    <h2>ホーム画面とは</h2>
+    <p>ホーム画面は、アプリのアイコンが並んでいる画面です。スマホを使うときの基本の画面で、ここからいろいろなアプリを開くことができます。</p>
+
+    <h2>白いバーの役割</h2>
+    <p>画面の一番下に白い横長のバーがあります。この白いバーを使って、いろいろな操作ができます。</p>
+    
+    <img src="picture/home1.jpg" alt="白いバーの位置">
+
+    <h2>ホーム画面に戻る方法</h2>
+    <p>他のアプリを使っているときに、ホーム画面に戻るには：</p>
+    <ul>
+      <li>画面の一番下にある<strong>白いバー</strong>を、下から上にサッとスワイプします。</li>
+      <li>すぐにホーム画面に戻ります。</li>
+    </ul>
+    
+    <div class="media-container">
+      <img src="picture/home2.jpg" alt="ホーム画面に戻る">
+      <video src="video/home2.MOV" controls muted></video>
+    </div>
+
+    <h2>最近使ったアプリを表示する</h2>
+    <p>さっきまで使っていたアプリに戻りたいとき：</p>
+    <ul>
+      <li>画面の一番下にある<strong>白いバー</strong>を、下から上にスワイプして、<strong>途中で指を止めます</strong>。</li>
+      <li>最近使ったアプリの一覧が表示されます。</li>
+      <li>左右にスワイプすると、他の最近使ったアプリも見れます。</li>
+    </ul>
+    
+    <div class="media-container">
+      <img src="picture/home3.jpg" alt="最近使ったアプリ">
+      <video src="video/home3.MOV" controls muted></video>
+    </div>
+
+    <h2>すべてのアプリ一覧を表示する</h2>
+    <p>スマホに入っているすべてのアプリを見るには：</p>
+    <ul>
+      <li>ホーム画面で、<strong>画面の中央から上にスワイプ</strong>します。</li>
+      <li>すべてのアプリがあいうえお順に並んで表示されます。</li>
+      <li>上下にスクロールすると、たくさんのアプリを見ることができます。</li>
+    </ul>
+    
+    <div class="media-container">
+      <img src="picture/home4.jpg" alt="すべてのアプリ一覧">
+      <video src="video/home4.MOV" controls muted></video>
+    </div>
+
+    <p>💡 <strong>ポイント：</strong> 白いバーを使うことで、ホーム画面に戻ったり、最近使ったアプリを見たりすることができます。最初は少し難しいかもしれませんが、何度か練習すればすぐに慣れます。</p>
 
     <footer>
       <a href="index.html" class="back-to-index">選択画面に戻る</a>
